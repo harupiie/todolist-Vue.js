@@ -1,28 +1,36 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="box">
+    <h3>MyTodo</h3>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import TodoForm from "./components/TodoForm";
+// import TodoList from "./components/TodoList";
 
-export default {
-  name: "App",
-  components: {
-    HelloWorld
-  }
-};
+// export default {
+//   components: {
+//     "todo-form": TodoForm,
+//     "todo-list": TodoList
+//   }
+// methods: {
+//   addTodo(newTodo) {
+//     // ToDo追加
+//     this.todos.push(newTodo);
+//     localStorage.setItem("todos", JSON.stringify(this.todos));
+//   },
+//   deleteTodo(index) {
+//     // ToDo削除
+//     this.todos.splice(index, 1);
+//     localStorage.setItem("todos", JSON.stringify(this.todos));
+//   }
+// }
+// };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#box {
+  padding: 30px 30px;
 }
 </style>
